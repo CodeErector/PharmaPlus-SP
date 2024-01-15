@@ -1,0 +1,19 @@
+/* CSS Document specific*/
+
+.w{
+    max-width: 500px;
+}
+
+.loginInput {
+    border: none;
+    border-bottom: thin solid white;
+    background-color: #5ED28D;
+}
+
+.loginInput:focus {
+    outline: none;
+}
+
+.loginInput[placeholder]::-webkit-input-placeholder {
+    color: white;
+}
