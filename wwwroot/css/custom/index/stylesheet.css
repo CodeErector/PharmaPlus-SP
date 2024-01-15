@@ -61,6 +61,7 @@ textarea:focus{
 
 .boxborder{
     border: thin solid #5ED28D;
+    background-color: white;
 }
 
 .vheight{
