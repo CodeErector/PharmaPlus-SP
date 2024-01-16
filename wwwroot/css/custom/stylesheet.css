@@ -6,7 +6,7 @@
 }
 
 .bgcolor{
-    background-color: #5ED28D;
+    background-color: #5ED28D !important;
 }
 
 .color{
@@ -34,4 +34,8 @@ h3{
 .Margin {
     margin-top: 70px;
     margin-bottom: 76px;
+}
+
+.nav-link {
+    color: #5ED28D !important;
 }

@@ -1,0 +1,14 @@
+﻿<CascadingAuthenticationState>
+<AuthorizeView>
+    <Authorized>
+        <a href="Identity/Account/Manage">Hello, @context.User.Identity?.Name!</a>
+        <form method="post" action="Identity/Account/LogOut">
+            <button type="submit" class="btn bgcolor px-4 text-white rounded-0 mt-3 mt-md-0">Log out</button>
+        </form>
+    </Authorized>
+    <NotAuthorized>
+        <a class="nav-link" href="Identity/Account/Login">Log in</a>
+        <a class="btn bgcolor px-4 text-white rounded-0 mt-3 mt-md-0" href="Identity/Account/Register">SignUp</a>
+    </NotAuthorized>
+</AuthorizeView>
+</CascadingAuthenticationState>
