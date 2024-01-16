@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("PharmaPlusContextConnection") ?? throw new InvalidOperationException("Connection string 'PharmaPlusContextConnection' not found.");
 
 builder.Services.AddDbContext<PharmaPlusContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection")));
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<PharmaPlusContext>();
 
